@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JerimiahK/first3DWorld/issues"
   },
-  "homepage": "https://github.com/JerimiahK/first3DWorld#readme"
+  "homepage": "https://github.com/JerimiahK/first3DWorld#readme",
+  "dependencies": {
+    "@react-three/fiber": "^8.10.1"
+  }
 }

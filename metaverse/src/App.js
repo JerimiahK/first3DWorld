@@ -18,7 +18,7 @@ function App() {
         <img id="sky" src={sky} />
       </a-assets>
       <a-sky color="#FFFFFF" material="src: #sky" rotation="0 0 0"></a-sky>
-      <a-entity id="scene" position="0 0 0" scale="1 1 1"></a-entity>
+      <a-entity id="scene" position="0 -4 0" scale="1 1 1"></a-entity>
     </a-scene>
   );
 }

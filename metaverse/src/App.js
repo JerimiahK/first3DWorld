@@ -1,15 +1,14 @@
-import { Canvas } from "@react-three/fiber";
 import "aframe";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import sky from "./assets/metaversesky.jpeg";
-import mars from "./models/mars2.glb";
+import scene from "./models/greenScene.glb";
 
 function App() {
   const loader = new GLTFLoader();
 
-  loader.load(mars, (d) => {
+  loader.load(scene, (d) => {
     console.log(d);
-    const entity = document.getElementById("mars");
+    const entity = document.getElementById("scene");
     entity.object3D.add(d.scene)
   });
 
@@ -19,7 +18,7 @@ function App() {
         <img id="sky" src={sky} />
       </a-assets>
       <a-sky color="#FFFFFF" material="src: #sky" rotation="0 0 0"></a-sky>
-      <a-entity id="mars" position="0 0 0" scale="500 500 500"></a-entity>
+      <a-entity id="scene" position="0 0 0" scale="1 1 1"></a-entity>
     </a-scene>
   );
 }
